@@ -33,8 +33,6 @@ void get_value(Files *file, Token *tok)
 	char c;
 
 	while (c = fgetc(file->script)) {
-
-
 /* resizing feature
 		if (tok->buffpos + 5 == tok->_SIZE) {
 			tok->_SIZE *= 2;
@@ -68,7 +66,6 @@ void get_value(Files *file, Token *tok)
 			  && !is_buff_empty(tok->buff)) 
 		{
 			insert_to_buff(c, tok);
-
 			/* if the quote is escaped, then it is not a
 			   closing tag (a.k.a. part of the value) */
 			if (is_escaped_char(tok)) {
@@ -79,7 +76,6 @@ void get_value(Files *file, Token *tok)
 			/* make sure the opening and closing is the same
 			   kind of quote */
 			else if (c == tok->buff[0]) {
-				
 				extract_value(tok);
 				reset_buffpos_of(tok);
 				return;
