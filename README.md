@@ -4,11 +4,12 @@
 
 ## A) Cara penggunaan
 
-   Katakanlah terdapat program `file.exe`, file `script.cpss`, serta subfolder `components/`.
+   Katakanlah terdapat program `compose.exe`, file `script.cpss`, serta subfolder `components/`.
    Lalu di dalam folder `components/` terdapat file `base.css` serta `navbar.css`
    
    
    Dengan isi dari file `script.cpss` adalah sebagai berikut:
+      
       {% compose 'style.css' %}<br><br>
       
       {% insertfile 'components/base.css' %}<br>
@@ -16,6 +17,7 @@
    
    
    Kemudian dijalankan perintah di CMD sebagai berikut:
+      
       compose script.cpss
    
    
