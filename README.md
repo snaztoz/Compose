@@ -10,10 +10,10 @@
    
    Dengan isi dari file `script.cpss` adalah sebagai berikut:
       
-      {% compose 'style.css' %}<br><br>
+      {% compose 'style.css' %}
       
-      {% insertfile 'components/base.css' %}<br>
-      {% insertfile 'components/navbar.css' %}<br>
+      {% insertfile 'components/base.css' %}
+      {% insertfile 'components/navbar.css' %}
    
    
    Kemudian dijalankan perintah di CMD sebagai berikut:
